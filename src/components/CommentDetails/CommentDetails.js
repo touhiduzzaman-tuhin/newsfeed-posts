@@ -18,7 +18,7 @@ const CommentDetails = (props) => {
             <div className="comment-style">
                 <div>
                     {
-                        user.map(user => <UserImage user={user}></UserImage>)
+                        user.map((user, index) => <UserImage key={index} user={user}></UserImage>)
                     }
                 </div>
                 <div className="comment-body">

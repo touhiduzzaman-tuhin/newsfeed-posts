@@ -15,7 +15,7 @@ const Comment = (props) => {
     return (
         <div>
             {
-                comment.map(comment => <CommentDetails comment={comment}></CommentDetails>)
+                comment.map((comment, index) => <CommentDetails key={index} comment={comment}></CommentDetails>)
             }
             
         </div>

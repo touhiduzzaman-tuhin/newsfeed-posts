@@ -23,7 +23,7 @@ const Home = () => {
        return (
         <div>
             {
-                post.map(post => <Post post={post}></Post>)
+                post.map(post => <Post key={post.id} post={post}></Post>)
             }           
         </div>
     );

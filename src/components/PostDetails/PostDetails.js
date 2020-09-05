@@ -47,10 +47,10 @@ const PostDetails = (props) => {
     return (
         <div className='post-details'>
             <Card className={classes.root} variant="outlined">
-                <CardContent>
+                <CardContent style={{textAlign : 'center'}}>
                     <Typography variant="h5" component="h2">
                       {
-                        images.map(images => <PostImage image={images}></PostImage>)
+                        images.map((images, index) => <PostImage key={index} image={images}></PostImage>)
                       }
                     </Typography>                   
                     <Typography variant="h5" component="h2">
